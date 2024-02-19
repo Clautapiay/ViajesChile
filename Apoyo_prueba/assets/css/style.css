@@ -1,7 +1,24 @@
-.quienesomos {
+.bg-total {
     background-color: black;
 }
 
+.NabVar {
+    background-color: transparent;
+}
+
+
+.quienesomos {
+    background-color: black;
+    padding-top: 30px;
+}
+
+.nav-link {
+    color: white;
+}
+
+.navbar-brand {
+    display: flex;
+}
 
 .subtitulos {
     color: white;
@@ -27,8 +44,38 @@
 
 .contacto {
     background-color: black;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 .form-label {
     color: white;
+}
+
+.footer {
+    background-color: aqua;
+    display: flex;
+}
+
+.redessociales {
+    text-align: end;
+    padding-right: 150px;
+    padding-bottom: 15px;
+    color: black;
+}
+
+.footerviajes {
+    text-align: start;
+    color: black;
+    padding-top: 15px;
+    padding-left: 150px;
+}
+
+.bg-card {
+    background-color: black;
+    color: white;
+}
+
+.container {
+    background-color: black;
 }

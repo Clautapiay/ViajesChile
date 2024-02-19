@@ -4,12 +4,15 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
+<!-- Bootstrap / BootstrapJS versión 5.3.2 -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>
+
+    <!-- Se agrega favicon -->
+    <link rel="shortcut icon" type="image" href="./assets/img/viajes.svg">
 
     <!-------- GOOGLE FONTS --------->
 
@@ -24,31 +27,38 @@
     <title>Viajes Chile</title>
 </head>
 
-<body>
+<body class="bg-total">
     <!-- Sección Navbar -->
-    <section>
-        <nav class="navbar navbar-expand-lg">
+    <section class="NavBar" id="inicio">
+        <nav class="navbar navbar-dark navbar-expand-lg fixed-top bg-info px-md-5 bg-transparent">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#">
                     <img src="assets/img/viajes.svg" alt="Logo" width="70" height="30" />
                     <p> VIAJES CHILE</p>
                 </a>
+                <!-- Botón alternancia para pantallas pequeñas -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
 
-
-                <ul class="nav justify-content-end">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Inicio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Quienes somos</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Destacados</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Contacto</a>
-                    </li>
-                </ul>
+                <!-- Contenedor enlaces  -->
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#inicio">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#quienesomos">Quienes somos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#destacados">Destacados</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contacto">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </nav>
     </section>
@@ -83,109 +93,143 @@
     </section>
 
 
-    <!-- Sección quiénes somos, se debe ocultar al achicar la pantalla -->
-    <section class="quienesomos">
+    <div class="container">
+        <!-- Sección quiénes somos, se debe ocultar al achicar la pantalla -->
+        <section class="quienesomos" id="quienesomos">
 
-        <h2 class="subtitulos"> ¿QUIENES SOMOS? </h2>
-        <div class="row row-cols-3 d-none d-xs-none d-sm-none d-md-flex py-5">
+            <h2 class="subtitulos">¿QUIENES SOMOS?</h2>
+            <div class="row row-cols-3 d-none d-xs-none d-sm-none d-md-flex py-5">
+                <div class="col-4">
+                    <div class="bg-card card text" style="">
+                        <div class="card-header"><i class="fa-brands fa-avianex"></i></div>
+                        <div class="card-body">
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam suscipit
+                                quas commodi neque. Architecto sapiente vel quae a, dolore beatae eligendi
+                                necessitatibus reiciendis fugiat, accusamus repellat dolorum, quidem ipsum porro?.
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam suscipit
+                                quas commodi neque. Architecto sapiente vel quae a, dolore beatae eligendi
+                                necessitatibus reiciendis fugiat, accusamus repellat dolorum, quidem ipsum porro?.</p>
+                        </div>
+                    </div>
+                </div>
 
-            <div class="col-4">
-                <div class="card text-bg-dark mb-3" style="">
-                    <div class="card-header"><i class="fa-brands fa-avianex"></i></div>
-                    <div class="card-body">
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the
-                            card's content.</p>
+
+                <div class="col-4">
+                    <div class="bg-card card text" style="">
+                        <div class="card-body">
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam suscipit
+                                quas commodi neque. Architecto sapiente vel quae a, dolore beatae eligendi
+                                necessitatibus reiciendis fugiat, accusamus repellat dolorum, quidem ipsum porro?.
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam suscipit
+                                quas commodi neque. Architecto sapiente vel quae a, dolore beatae eligendi
+                                necessitatibus reiciendis fugiat, accusamus repellat dolorum, quidem ipsum porro?.</p>
+                            <div class="card-header"><i class="fa-solid fa-mountain-sun"></i></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-4">
+                    <div class="bg-card card text" style="">
+                        <div class="card-header"><i class="fa-solid fa-route"></i></div>
+                        <div class="card-body">
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam suscipit
+                                quas commodi neque. Architecto sapiente vel quae a, dolore beatae eligendi
+                                necessitatibus reiciendis fugiat, accusamus repellat dolorum, quidem ipsum porro?.
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam suscipit
+                                quas commodi neque. Architecto sapiente vel quae a, dolore beatae eligendi
+                                necessitatibus reiciendis fugiat, accusamus repellat dolorum, quidem ipsum porro?.</p>
+                        </div>
                     </div>
                 </div>
             </div>
+        </section>
 
-
-            <div class="col-4">
-                <div class="card text-bg-dark mb-3" style="">
-
+        <!-- Sección Destacados -->
+        <section class="destacados" id="destacados">
+            <h2 class="subtitulos">DESTACADOS </h2>
+            <br>
+            <div class="card-group">
+                <div class="tarjeta card">
+                    <img src="assets/img/card1.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the
-                            card's content.</p>
-                        <div class="card-header"><i class="fa-solid fa-mountain-sun"></i></div>
+                        <h5 class="card-title">Light card title</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam suscipit
+                            quas commodi neque. Architecto sapiente vel quae a, dolore beatae eligendi
+                            necessitatibus reiciendis fugiat, accusamus repellat dolorum, quidem ipsum porro?.</p>
+                    </div>
+                </div>
+                <div class="tarjeta card">
+                    <img src="assets/img/card2.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Light card title</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam suscipit
+                            quas commodi neque. Architecto sapiente vel quae a, dolore beatae eligendi
+                            necessitatibus reiciendis fugiat, accusamus repellat dolorum, quidem ipsum porro?.</p>
+                    </div>
+                </div>
+                <div class="tarjeta card">
+                    <img src="assets/img/card3.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Light card title</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam suscipit
+                            quas commodi neque. Architecto sapiente vel quae a, dolore beatae eligendi
+                            necessitatibus reiciendis fugiat, accusamus repellat dolorum, quidem ipsum porro?.</p>
+                    </div>
+                </div>
+                <div class="tarjeta card">
+                    <img src="assets/img/card4.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Light card title</h5>
+                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                            additional content. This card has even longer content than the first to show that equal
+                            height
+                            action.</p>
                     </div>
                 </div>
             </div>
+        </section>
 
-            <div class="col-4">
-                <div class="card text-bg-dark mb-3" style="">
-                    <div class="card-header"><i class="fa-solid fa-route"></i></div>
-                    <div class="card-body">
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the
-                            card's content.</p>
-                    </div>
+
+        <!-- Sección Contacto incluir formulario -->
+        <section class="contacto" id="contacto">
+            <h2 class="subtitulos">CONTACTO </h2>
+            <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">Nombre</label>
+                <input type="email" class="form-control" id="" placeholder="">
+            </div>
+            <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">Asunto</label>
+                <input type="email" class="form-control" id="" placeholder="">
+            </div>
+            <div class="mb-3">
+                <label for="exampleFormControlTextarea1" class="form-label">Mensaje</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+            </div>
+            <button type="button" class="btn btn-info">Enviar</button>
+        </section>
+
+    </div>
+
+    <!-- Sección Footer incluir links sitios web -->
+    <section>
+        <footer class="footer row justify-content">
+            <div class="footerviajes">
+                <h3>VIAJES CHILE</h2>
+            </div>
+            <div class="col">
+                <div class="redessociales">
+                    <a href="https://www.github.com"><i class="fa-brands fa-github" style="font-size:36px;"></i></a>
+                    <a href="https://www.linkedin.com"><i class="fa-brands fa-linkedin" style="font-size:36px;"></i></a>
+                    <a href="https://www.twitter.com"><i class="fa-brands fa-square-twitter" style="font-size:36px;"></i></a>
+                    <a href="https://www.facebook.com"><i class="fa-brands fa-square-facebook" style="font-size:36px;"></i></a>
                 </div>
             </div>
-        </div>
+        </footer>
     </section>
 
 
-    <section class="destacados">
-        <h2 class="subtitulos">DESTACADOS </h2>
-        <div class="card-group">
-            <div class="tarjeta card">
-                <img src="assets/img/card1.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
-                        additional content. This content is a little bit longer.</p>
-                </div>
-            </div>
-            <div class="tarjeta card">
-                <img src="assets/img/card2.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
-                    additional content. This card has even longer content than the first to show that equal height
-                    action.</p>
-                </div>
-            </div>
-            <div class="tarjeta card">
-                <img src="assets/img/card3.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
-                        additional content. This card has even longer content than the first to show that equal height
-                        action.</p>
-                </div>
-            </div>
-            <div class="tarjeta card">
-                <img src="assets/img/card4.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
-                        additional content. This card has even longer content than the first to show that equal height
-                        action.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-
-    <section class="contacto"> 
-        <h2 class="subtitulos">CONTACTO </h2>
-    <div class="mb-3">
-        <label for="exampleFormControlInput1" class="form-label">Nombre</label>
-        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
-      </div>
-      <div class="mb-3">
-        <label for="exampleFormControlInput1" class="form-label">Asunto</label>
-        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
-      </div>
-      <div class="mb-3">
-        <label for="exampleFormControlTextarea1" class="form-label">Mensaje</label>
-        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-      </div>
-</section>
-
-
-    <section> FOOTER </section>
-
-
+    <!-- JS -->
+    <script src="assets/js/"></script>
 </body>
 
 
