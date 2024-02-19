@@ -26,7 +26,7 @@
 
 <body>
     <!-- Sección Navbar -->
-    <section> 
+    <section>
         <nav class="navbar navbar-expand-lg">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#">
@@ -84,51 +84,106 @@
 
 
     <!-- Sección quiénes somos, se debe ocultar al achicar la pantalla -->
-    <section class="quienesomos"> 
-        
-        <h2 class="quienes"> ¿QUIENES SOMOS? </h2>
-    <div class="row row-cols-3 d-none d-xs-none d-sm-none d-md-flex py-5">
+    <section class="quienesomos">
 
-        <div class="col-4">
-            <div class="card text-bg-dark mb-3" style="">
-                <div class="card-header"><i class="fa-brands fa-avianex"></i></div>
-                <div class="card-body">
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                        card's content.</p>
+        <h2 class="subtitulos"> ¿QUIENES SOMOS? </h2>
+        <div class="row row-cols-3 d-none d-xs-none d-sm-none d-md-flex py-5">
+
+            <div class="col-4">
+                <div class="card text-bg-dark mb-3" style="">
+                    <div class="card-header"><i class="fa-brands fa-avianex"></i></div>
+                    <div class="card-body">
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the
+                            card's content.</p>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-4">
+                <div class="card text-bg-dark mb-3" style="">
+
+                    <div class="card-body">
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the
+                            card's content.</p>
+                        <div class="card-header"><i class="fa-solid fa-mountain-sun"></i></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-4">
+                <div class="card text-bg-dark mb-3" style="">
+                    <div class="card-header"><i class="fa-solid fa-route"></i></div>
+                    <div class="card-body">
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the
+                            card's content.</p>
+                    </div>
                 </div>
             </div>
         </div>
-
-
-        <div class="col-4">
-            <div class="card text-bg-dark mb-3" style="">
-                
-                <div class="card-body">
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                        card's content.</p>
-                    <div class="card-header"><i class="fa-solid fa-mountain-sun"></i></div>    
-                </div>
-            </div>
-        </div>
-
-        <div class="col-4">
-            <div class="card text-bg-dark mb-3" style="">
-                <div class="card-header"><i class="fa-solid fa-route"></i></div>
-                <div class="card-body">
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                        card's content.</p>
-                </div>
-            </div>
-        </div>
-    </div>
     </section>
 
 
-        <section> DESTACADOS </section>
+    <section class="destacados">
+        <h2 class="subtitulos">DESTACADOS </h2>
+        <div class="card-group">
+            <div class="tarjeta card">
+                <img src="assets/img/card1.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                        additional content. This content is a little bit longer.</p>
+                </div>
+            </div>
+            <div class="tarjeta card">
+                <img src="assets/img/card2.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                    additional content. This card has even longer content than the first to show that equal height
+                    action.</p>
+                </div>
+            </div>
+            <div class="tarjeta card">
+                <img src="assets/img/card3.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                        additional content. This card has even longer content than the first to show that equal height
+                        action.</p>
+                </div>
+            </div>
+            <div class="tarjeta card">
+                <img src="assets/img/card4.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                        additional content. This card has even longer content than the first to show that equal height
+                        action.</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-        <sectino> CONTACTO </sectino>
 
-        <section> FOOTER </section>
+
+    <section class="contacto"> 
+        <h2 class="subtitulos">CONTACTO </h2>
+    <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label">Nombre</label>
+        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+      </div>
+      <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label">Asunto</label>
+        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+      </div>
+      <div class="mb-3">
+        <label for="exampleFormControlTextarea1" class="form-label">Mensaje</label>
+        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+      </div>
+</section>
+
+
+    <section> FOOTER </section>
 
 
 </body>

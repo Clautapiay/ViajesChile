@@ -3,7 +3,7 @@
 }
 
 
-.quienes {
+.subtitulos {
     color: white;
     text-align: center;
 }
@@ -11,4 +11,24 @@
 .card-header {
     background-color: aqua;
     text-align: center;
+}
+
+.destacados {
+    background-color: black;
+}
+
+.card-group {
+    border-color: aqua;
+}
+
+.tarjeta{
+    background-color: aqua;
+}
+
+.contacto {
+    background-color: black;
+}
+
+.form-label {
+    color: white;
 }
