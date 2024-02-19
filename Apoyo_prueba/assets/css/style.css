@@ -15,6 +15,7 @@
 .nav-link {
     color: white;
     font-family: "Patua One";
+    font-size: 18px;
 }
 
 .navbar-brand {
@@ -89,6 +90,7 @@
 
 #titulo {
     font-family: "Patua One";
+    font-size: 28px;
 }
 
 .card-text {
