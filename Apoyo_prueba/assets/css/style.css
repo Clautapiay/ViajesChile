@@ -14,6 +14,7 @@
 
 .nav-link {
     color: white;
+    font-family: "Patua One";
 }
 
 .navbar-brand {
@@ -23,6 +24,9 @@
 .subtitulos {
     color: white;
     text-align: center;
+    font-family: "Neucha", cursive;
+    font-size: 45px;
+    padding-top: 30px;
 }
 
 .card-header {
@@ -50,6 +54,8 @@
 
 .form-label {
     color: white;
+    font-family: "Neucha", cursive;
+    font-size: 20px;
 }
 
 .footer {
@@ -59,16 +65,17 @@
 
 .redessociales {
     text-align: end;
-    padding-right: 150px;
-    padding-bottom: 15px;
     color: black;
+    padding-right: 150px;
 }
 
 .footerviajes {
     text-align: start;
-    color: black;
-    padding-top: 15px;
+    color: blue;
+    display: flex;
     padding-left: 150px;
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 
 .bg-card {
@@ -78,4 +85,17 @@
 
 .container {
     background-color: black;
+}
+
+#titulo {
+    font-family: "Patua One";
+}
+
+.card-text {
+    font-family: "Neucha", cursive;
+}
+
+.card-title {
+    font-family: "Neucha", cursive;
+    text-align: center;
 }
